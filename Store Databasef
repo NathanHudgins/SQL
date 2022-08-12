@@ -1,0 +1,22 @@
+Creating a database for a Store
+
+CREATE table models(id integer primary key, type text, quantity integer, price integer, size text);
+INSERT INTO models values(1, "A", 10, 150, "Large");
+INSERT INTO models values(2, "B", 15, 250, "Large");
+INSERT INTO models values(3, "C", 25, 100, "Large");
+INSERT INTO models values(4, "D", 5, 350, "Large");
+INSERT INTO models values(5, "E", 10, 200, "Large");
+INSERT INTO models values(6, "A", 20, 100, "Small");
+INSERT INTO models values(7, "B", 10, 150, "Small");
+INSERT INTO models values(8, "C", 30, 75, "Small");
+INSERT INTO models values(9, "D", 5, 250, "Small");
+INSERT INTO models values(10, "E", 5, 150, "Small");
+INSERT INTO models values(11, "A", 5, 100, "Medium");
+INSERT INTO models values(12, "B", 20, 100, "Medium");
+INSERT INTO models values(13, "C", 15, 100, "Medium");
+INSERT INTO models values(14, "D", 20, 300, "Medium");
+INSERT INTO models values(15, "E", 10, 150, "Medium");
+
+Display database of only Large models.
+
+SELECT * FROM models WHERE size= "Large"
