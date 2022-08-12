@@ -1,0 +1,26 @@
+Create a inventory database for a specialty store that sells figurines.
+
+create table Figures (id integer primary key, type text, quantity integer, price integer, size text);
+INSERT INTO Figures VALUES(1, "Hero", 10, 250, "Large");
+INSERT INTO Figures VALUES(2, "Villain", 15, 350, "Large");
+INSERT INTO Figures VALUES(3, "Monster", 25, 100, "Large");
+INSERT INTO Figures VALUES(4, "Sage", 5, 150, "Large");
+INSERT INTO Figures VALUES(5, "Sword", 10, 200, "Large");
+INSERT INTO Figures VALUES(6, "Hero", 20, 200, "Medium");
+INSERT INTO Figures VALUES(7, "Villain", 10, 250, "Medium");
+INSERT INTO Figures VALUES(8, "Monster", 30, 75, "Medium");
+INSERT INTO Figures VALUES(9, "Sage", 5, 100, "Medium");
+INSERT INTO Figures VALUES(10, "Sword", 5, 150, "Medium");
+INSERT INTO Figures VALUES(11, "Hero", 5, 150, "Small");
+INSERT INTO Figures VALUES(12, "Villain", 20, 200, "Small");
+INSERT INTO Figures VALUES(13, "Monster", 15, 50, "Small");
+INSERT INTO Figures VALUES(14, "Sage", 20, 75, "Small");
+INSERT INTO Figures VALUES(15, "Sword", 10, 100, "Small");
+
+Query all items considered large that are on hand.
+
+SELECT * FROM Figures WHERE size= "Large"
+
+Sort them from most expensive to least expensive.
+
+ORDER BY price desc
